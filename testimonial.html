@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Student Testimonials - The Cube Institute"
+    />
+
+    <!-- ========== Page Title ========== -->
+    <title>Student Testimonials - The Cube Institute</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo/favicon-white.png"
+      type="image/x-icon"
+    />
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/elegant-icons.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+
+    <!-- ========== Google Fonts ========== -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
+      rel="stylesheet"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NNN61TJL62"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-NNN61TJL62");
+    </script>
+
+    <style>
+      .white {
+        color: #fff;
+      }
+
+      .margin-top {
+        margin-top: 80px;
+      }
+
+      nav.navbar.bootsnav {
+        z-index: 2;
+      }
+
+      .testimonial-card {
+        background: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      }
+
+      .testimonial-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 20px;
+        object-fit: cover;
+      }
+
+      .testimonial-info h4 {
+        margin: 0;
+        color: #333;
+        font-weight: 600;
+      }
+
+      .testimonial-info span {
+        color: #666;
+        font-size: 14px;
+      }
+
+      .rating {
+        color: #f39c12;
+        margin-bottom: 15px;
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        color: #555;
+        line-height: 1.8;
+        margin-bottom: 0;
+      }
+
+      .page-header {
+        background: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("assets/img/2.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 150px 0 100px;
+        color: white;
+        text-align: center;
+      }
+
+      .page-header h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .page-header p {
+        font-size: 18px;
+        opacity: 0.9;
+      }
+
+      .stats-section {
+        background: #f8f9fa;
+        padding: 80px 0;
+      }
+
+      .stat-item {
+        text-align: center;
+        padding: 30px;
+      }
+
+      .stat-number {
+        font-size: 48px;
+        font-weight: 700;
+        color: #007bff;
+        display: block;
+      }
+
+      .stat-label {
+        font-size: 16px;
+        color: #666;
+        margin-top: 10px;
+      }
+
+      .filter-buttons {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .filter-btn {
+        background: transparent;
+        border: 2px solid #007bff;
+        color: #007bff;
+        padding: 10px 25px;
+        margin: 0 10px 10px 0;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .filter-btn:hover,
+      .filter-btn.active {
+        background: #007bff;
+        color: white;
+      }
+
+      .video-testimonial {
+        position: relative;
+        background: #000;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .play-btn {
+        width: 80px;
+        height: 80px;
+        background: #007bff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+        transition: transform 0.3s ease;
+      }
+
+      .play-btn:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        .page-header h1 {
+          font-size: 36px;
+        }
+
+        .testimonial-card {
+          padding: 20px;
+        }
+
+        .testimonial-header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .testimonial-avatar {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+      }
+
+      /* Stats Section */
+      .cube-stats-section {
+        background-color: #f8f9fa;
+        padding: 60px 0;
+        font-family: "Poppins", sans-serif;
+        border-top: 1px solid #e9ecef;
+        border-bottom: 1px solid #e9ecef;
+      }
+
+      .stats-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .section-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .section-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .section-links a {
+        color: #2c3e50;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+      }
+
+      .section-links a:hover {
+        color: #4ecdc4;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+      }
+
+      .stat-card {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .stat-number {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #4ecdc4;
+        margin-bottom: 15px;
+        line-height: 1;
+      }
+
+      .stat-title {
+        font-size: 1.5rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .stat-description {
+        color: #7f8c8d;
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      .stats-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        border-top: 1px solid #e9ecef;
+      }
+
+      .search-container {
+        position: relative;
+        width: 200px;
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #e9ecef;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+
+      .search-input:focus {
+        border-color: #4ecdc4;
+      }
+
+      .current-time {
+        display: flex;
+        gap: 15px;
+        color: #7f8c8d;
+        font-size: 0.9rem;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .section-title {
+          font-size: 2.5rem;
+        }
+
+        .section-links {
+          gap: 15px;
+        }
+
+        .stats-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .stats-footer {
+          flex-direction: column;
+          gap: 20px;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .section-links {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="body">
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top -->
+    <div class="top-bar-area address-one-lines bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 address-info">
+            <div class="info box">
+              <ul>
+                <li>
+                  Have any question? +92-331-3263252, +92-348-8748007,
+                  +966-56-715-7692
+                </li>
+                <li>
+                  <i class="fas fa-envelope-open"></i>
+                  thecubeinstitute@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="user-login text-right col-md-2">
+            <a href="register.html">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Header -->
+    <header id="home">
+      <!-- Start Navigation -->
+      <nav class="navbar navbar-default navbar-sticky bootsnav">
+        <div class="container">
+          <!-- Start Header Navigation -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#navbar-menu"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/logo/Logo.png" class="logo" alt="Logo" />
+            </a>
+          </div>
+          <!-- End Header Navigation -->
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-center">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="courses.html">Courses</a>
+              </li>
+              <li>
+                <a href="contact.html">contact Us</a>
+              </li>
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li class="dropdown">
+                <a href="testimonial.html">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="text-center white">Student Success Stories</h1>
+            <p class="text-center white">
+              Hear what our students have to say about their transformative
+              learning experience at The Cube Institute
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <!-- Stats Section -->
+    <section class="cube-stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-card">
+            <div class="stat-number">95%</div>
+            <h3 class="stat-title">Success Rate</h3>
+            <p class="stat-description">Students achieving target grades</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card">
+            <div class="stat-number">500+</div>
+            <h3 class="stat-title">Happy Students</h3>
+            <p class="stat-description">Transformed since 2015</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card">
+            <div class="stat-number">8+</div>
+            <h3 class="stat-title">Years Experience</h3>
+            <p class="stat-description">Educational excellence</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card">
+            <div class="stat-number">25+</div>
+            <h3 class="stat-title">Expert Teachers</h3>
+            <p class="stat-description">Subject specialists</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="default-padding">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row">
+          <div class="site-heading text-center">
+            <div class="col-md-8 col-md-offset-2">
+              <h2>What Our Students Say</h2>
+              <p class="sub-heading">
+                Our students are speaking about the courses we offered and we
+                are pleased to share them with you. We are proud of our team and
+                their hard work.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonials Grid -->
+        <div class="row" id="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div
+            class="col-md-6 col-lg-4 testimonial-item"
+            data-category="a-level"
+          >
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  src="assets/img/man.png"
+                  alt="Hashir Ahmed"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4>Hashir Ahmed</h4>
+                  <span>A-Level Mathematics Student</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                I'm a student of A-levels I came to know about Sir Ahsan from my
+                friend back in 2020. I studied O-level maths and now studying
+                A-level maths from him. Now I could definitely say that Sir
+                Ahsan is among one of the most well experienced teacher in maths
+                faculty, He made maths so interesting for me and He is a teacher
+                to me like a friend.
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="col-md-6 col-lg-4 testimonial-item"
+            data-category="a-level"
+          >
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  src="assets/img/woman.png"
+                  alt="Izma"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4>Izma</h4>
+                  <span>A-Level Student</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                I joined sir Ahsan's classes with barely 2 months left in my
+                exam. But he accommodated me so well, covered each and every
+                major and minor detail of the syllabus and alongside conducted
+                topical past paper practice sessions as well. He teaches with
+                great passion and zeal and joining his classes was a great
+                decision for me.
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="col-md-6 col-lg-4 testimonial-item"
+            data-category="o-level"
+          >
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  src="assets/img/woman.png"
+                  alt="Iman"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4>Iman</h4>
+                  <span>O-Level Student</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                Would totally recommend to learn and increase your knowledge by
+                studying in the cube. It's one of the best coaching where
+                teachers are so kind and encouraging towards their students. My
+                own studies went amazing and I learned alot from them. Thank you
+                cube for being one of the best to your students.
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div
+            class="col-md-6 col-lg-4 testimonial-item"
+            data-category="a-level"
+          >
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  src="assets/img/man.png"
+                  alt="Salim"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4>Salim</h4>
+                  <span>A-Level Mathematics Student</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                Due to your endless and unflagging efforts…Alhamdulillah done
+                well in the paper…It was an amazing journey and experience with
+                you….your the best and most hardworking Maths teacher
+                undoubtedly… THANK YOU❤️for everything you did for us….
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div
+            class="col-md-6 col-lg-4 testimonial-item"
+            data-category="a-level"
+          >
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  src="assets/img/man.png"
+                  alt="Talha"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4>Talha</h4>
+                  <span>A2 Level Student</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                My name is Talha Khan and i am a student of A2. I got to know
+                about Sir Ahsen back in 2018 when i was in class 9 , he taught
+                me soo well that mathematics became so easy and interesting for
+                me. I studied O levels Maths , As Maths and now A2 Maths from
+                Sir Ahsan. He is a experienced and a teacher to me like a
+                brother.
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="col-md-6 col-lg-4 testimonial-item" data-category="ecat">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  src="assets/img/man.png"
+                  alt="A.Rehman"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4>A.Rehman</h4>
+                  <span>ECAT Preparation Student</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                Alhumdolillah, I feel very lucky to have the opportunity to
+                study from Sir Ahsan. He is an amazing teacher who has a very
+                unique way of teaching. He doesn't put alot of burden on his
+                students, instead he encourages them alot in there studies. No
+                matter what problem you are facing, he's always there to support
+                you!
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 7 -->
+          <div class="col-md-6 col-lg-4 testimonial-item" data-category="ecat">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  src="assets/img/man.png"
+                  alt="Moheeb"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4>Moheeb</h4>
+                  <span>ECAT - NED University</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                Aslam u alikum I got admission in civil engineering dep in NED
+                All thanks to you sir For teaching us in a way that helped us in
+                understanding the subject of maths from its basics and For
+                always helping us in all the problems We faced During study, May
+                Allah reward you for all your efforts.
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 8 -->
+          <div class="col-md-6 col-lg-4 testimonial-item" data-category="ecat">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  src="assets/img/man.png"
+                  alt="Mahad"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4>Mahad</h4>
+                  <span>ECAT Preparation Student</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                Salam sir Allhamdullilah ap se prha tha mana second year bh or
+                ECAT ki tyari bh mana apka coach centre s ki thy. Bohat
+                cooperative teachers th coaching k or bohat acha prhaya th unho
+                na. Ab inshallah UBIT ma doga dec ma dua kijyega udhr hojaye
+                Baqi Thankyou very much for being so cooperative❤️
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 9 -->
+          <div class="col-md-6 col-lg-4 testimonial-item" data-category="ecat">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  src="assets/img/woman.png"
+                  alt="Fatima"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4>Fatima</h4>
+                  <span>ECAT Preparation Student</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                Positive feedback for this centre.🥰 Today I am where is all
+                because of you The way all teachers taught in a very
+                understanding way is just amazing. I am so grateful to choose
+                your centre for my entry test.👍🏻
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-dark text-light default-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h2>Ready to Start Your Success Story?</h2>
+            <p>
+              Join hundreds of students who have achieved their academic goals
+              with The Cube Institute. Start your journey today and become our
+              next success story.
+            </p>
+            <a href="register.html" class="btn btn-light effect btn-lg"
+              >Enroll Now</a
+            >
+            <a
+              href="contact.html"
+              class="btn btn-outline btn-lg"
+              style="margin-left: 15px"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark default-padding-top text-light margin-top">
+      <div class="container">
+        <div class="row">
+          <div class="f-items">
+            <div class="col-md-4 item">
+              <div class="f-item">
+                <img src="assets/img/logo/Logo-white.png" alt="Logo" />
+                <p>
+                  The Cube is team of professional teachers who are working hard
+                  to make students career bright. We provide our students with
+                  the best possible education that will help them succeed in
+                  their future endeavors.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/thecubeinstituteoalevel"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://instagram.com/thecubeinstitute?igshid=YmMyMTA2M2Y="
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 item">
+              <div class="f-item link">
+                <h4>Courses</h4>
+                <ul>
+                  <li>
+                    <a href="courses.html">O Levels</a>
+                  </li>
+                  <li>
+                    <a href="courses.html">AS Level</a>
+                  </li>
+                  <li>
+                    <a href="courses.html">A2 Level</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 item">
+              <div class="f-item link">
+                <h4>Get In Touch</h4>
+                <ul>
+                  <li>
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="register.html">Register Now</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 item">
+              <div class="f-item recent-post">
+                <h4>Have Any Query?</h4>
+                <p>
+                  Address: B-44 Block 1 Mochi More,<br />Gulshan-e-Iqbal,
+                  Karachi
+                </p>
+                <p>
+                  Call Us: +92-331-3263252 <br />
+                  +92-348-8748007 <br />
+                  +966-56-715-7692
+                </p>
+                <p>Email Us: thecubeinstitute@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="col-md-6">
+                <p>
+                  &copy; Copyright 2022. All Rights Reserved by
+                  <a href="https://thecubeinstitute.com/">The Cube</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- ========== JavaScript ========== -->
+    <!-- Modern jQuery with Migration -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+
+    <!-- Other JS Libraries -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/loopcounter.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+
+    <!-- Equal Heights Plugin (if needed) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.equalheights/1.5.3/jquery.equalheights.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d71e7d4329.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fixed Share Modal JS -->
+    <script>
+      // Fixed share-modal.js implementation
+      document.addEventListener("DOMContentLoaded", function () {
+        const shareButton = document.getElementById("share-button");
+        const shareModal = document.getElementById("share-modal");
+
+        if (shareButton && shareModal) {
+          shareButton.addEventListener("click", function () {
+            shareModal.style.display = "block";
+          });
+
+          const closeButton = document.querySelector(".share-modal-close");
+          if (closeButton) {
+            closeButton.addEventListener("click", function () {
+              shareModal.style.display = "none";
+            });
+          }
+        }
+      });
+    </script>
+
+    <!-- Fixed Preloader and Initialization -->
+    <script>
+      // Wait for both DOM ready and window load
+      $(document).ready(function () {
+        // Initialize plugins here
+        if (typeof $.fn.equalHeights === "function") {
+          $(".equal-height-container").equalHeights();
+        }
+
+        // Other initializations...
+      });
+
+      $(window).on("load", function () {
+        // Hide preloader when everything is loaded
+        $(".se-pre-con").fadeOut("slow");
+
+        // Fallback in case load event doesn't fire
+        setTimeout(function () {
+          $(".se-pre-con").fadeOut("slow");
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

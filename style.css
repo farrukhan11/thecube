@@ -1,61 +1,4 @@
-/* ----------------------------------
 
-Template Name: Educates - Education and LMS Template
-Author: validtheme
-Description:
-Version: 1.5
-
-Main Font    : Poppins
-Main Color   : #ffb606
-
--------------------------------------
-
-Table of contents
-        
-    01. Template default css
-    02. Navbar
-        - Navbar Left
-        - Navbar Right
-        - Side Navbar
-    03. Slider
-        - Zoom Slider
-        - Animation Slider
-        - Default Slide
-    04. About Area
-    05. Why Chose Us Area
-    06. Pricing Table
-    07. Search Courses Area
-    08. Featured Courses Area
-    09. Popular Courses
-    10. Course Category
-    11. Fun Factor
-    12. Advisor Area
-    13. Event
-        - Mixed Colum
-        - Grid Colum
-        - Event Slider
-    14. Clients Area
-    15. Registration & Faq
-    16. Portfolio
-    17. Blog
-        - Left Sidebar
-        - Right Sidebar
-        - Grid Colum
-        - Blog Standard
-    18. Concat Area
-    19. Error 404
-    20. Footer
-        - Image Background
-        - Solid Background
-    21. PHP Contact Form
-    22. Others
-
-*/
-
-
-/*
-** Template default css
-*/
 
 * {
   padding: 0;
@@ -4184,6 +4127,7 @@ body,
   text-align: center;
   position: absolute;
 }
+
 .advisor-items .advisor-item .info-title {
   background: #ffffff none repeat scroll 0 0;
   bottom: 0;
@@ -7476,16 +7420,44 @@ footer .footer-bottom.bg-light p {
 }
 
 @media only screen and (max-width: 960px) and (min-width: 300px) {
+
   /* CSS styles */
   .owl-carousel .owl-item img {
     width: 50%;
     margin: auto;
-}
-.modal {
-top: -30%;
-}
-.advisor-item .info-title {
-  bottom: -50px;
+  }
+
+  .modal {
+    top: -30%;
+  }
+
+  .advisor-item .info-title {
+    bottom: -50px;
+  }
+
 }
 
+.se-pre-con {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff url(assets/img/preloader.gif) center no-repeat;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.se-pre-con.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.stat-item {
+  padding: 15px;
+  margin: 10px;
+  background: white; /* or your card background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-block-end: 10px;
 }
