@@ -65,6 +65,18 @@
       nav.navbar.bootsnav {
         z-index: 2;
       }
+      .popular-filter button.is-checked {
+        background-color: #ffb606;
+        color: white !important;
+      }
+
+      /* NEW CSS FOR MOBILE RESPONSIVENESS */
+      .popular-filter {
+        display: flex;
+        flex-wrap: wrap; /* Allows buttons to wrap to the next line */
+        justify-content: center; /* Keeps buttons centered */
+        gap: 10px; /* Adds space between buttons */
+      }
     </style>
   </head>
 
@@ -170,15 +182,35 @@
     <div class="popular-courses default-padding bottom-less without-carousel">
       <div class="container">
         <div class="row">
+          <div class="col-md-12">
+            <div class="popular-filter text-center">
+              <button class="btn is-checked" data-filter="*">
+                All
+              </button>
+              <button class="btn" data-filter=".cambridge">
+                Cambridge
+              </button>
+              <button class="btn" data-filter=".edexcel">
+                Edexcel IAL
+              </button>
+              <button class="btn" data-filter=".ielts-pte">
+                IELTS/PTE
+              </button>
+              <button class="btn" data-filter=".sat-gmat-gre">
+                SAT/GRE/GMAT
+              </button>
+              <button class="btn" data-filter=".ecat-mcat-iba">
+                ECAT/MCAT/IBA
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="popular-courses-items bottom-price">
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div
+              class="col-md-4 col-sm-6 equal-height item-grid cambridge edexcel ecat-mcat-iba"
+            >
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
@@ -186,7 +218,7 @@
                         <img
                           class="cardimg"
                           src="assets/img/teacher-pics/SIRAHSANPATEL.png"
-                          alt=""
+                          alt="Sir Ahsan Patel"
                         />
                       </a>
                     </div>
@@ -199,9 +231,9 @@
                   </div>
                   <h4><a href="course-details.html">Mathematics</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Cedar School / Cedar College</b>
-                    </small>
+                    <small
+                      ><b>Affiliation: Cedar School / Cedar College</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -213,22 +245,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid edexcel">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIR-HAMZA-NOOR-(MATH).png"
-                          alt=""
+                          alt="Sir Hamza Noor"
                       /></a>
                     </div>
                     <div class="others">
@@ -240,9 +265,7 @@
                   </div>
                   <h4><a href="course-details.html">Mathematics</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: ---</b>
-                    </small>
+                    <small><b>Affiliation: ---</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -254,22 +277,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIR-HASAN-SHAFIQUE-(ADD-MATH) .png"
-                          alt=""
+                          alt="Sir Hassan Shafique"
                       /></a>
                     </div>
                     <div class="others">
@@ -281,9 +297,9 @@
                   </div>
                   <h4><a href="course-details.html">Mathematics</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: The Academy / Ziauddin School</b>
-                    </small>
+                    <small
+                      ><b>Affiliation: The Academy / Ziauddin School</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -295,22 +311,17 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div
+              class="col-md-4 col-sm-6 equal-height item-grid sat-gmat-gre ecat-mcat-iba"
+            >
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIR-ARQUM-HUSSAIN-(MATHS).png"
-                          alt=""
+                          alt="Sir Arqum Hussain"
                       /></a>
                     </div>
                     <div class="others">
@@ -322,9 +333,7 @@
                   </div>
                   <h4><a href="course-details.html">Mathematics</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Beaconhouse</b>
-                    </small>
+                    <small><b>Affiliation: Beaconhouse</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -336,22 +345,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/jawadaftab.png"
-                          alt=""
+                          alt="Sir Jawad Aftab"
                       /></a>
                     </div>
                     <div class="others">
@@ -363,12 +365,11 @@
                   </div>
                   <h4><a href="course-details.html">Chemistry</a></h4>
                   <div class="cats">
-                    <small>
-                      <b
-                        >Affiliation: Delsol School, Zatians School, Von Hayat
-                        School
-                      </b>
-                    </small>
+                    <small
+                      ><b
+                        >Affiliation: Delsol School, Zatians School...</b
+                      ></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -380,22 +381,17 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div
+              class="col-md-4 col-sm-6 equal-height item-grid edexcel ecat-mcat-iba"
+            >
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRMUJEEBHUSSAIN(CHEMISTRY).png"
-                          alt=""
+                          alt="Sir Mujeeb Hussain"
                       /></a>
                     </div>
                     <div class="others">
@@ -407,9 +403,9 @@
                   </div>
                   <h4><a href="course-details.html">Chemistry</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Bahria Town School / College</b>
-                    </small>
+                    <small
+                      ><b>Affiliation: Bahria Town School / College</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -421,22 +417,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid ecat-mcat-iba">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRMOHSINAHMED(PHY).png"
-                          alt=""
+                          alt="Sir Mohsin Ahmed"
                       /></a>
                     </div>
                     <div class="others">
@@ -448,9 +437,9 @@
                   </div>
                   <h4><a href="course-details.html">Physics</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: The AMI School / The Benchmark</b>
-                    </small>
+                    <small
+                      ><b>Affiliation: The AMI School / The Benchmark</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -462,22 +451,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRKASHIFANEES(PHY).png"
-                          alt=""
+                          alt="Sir Kashif Anees"
                       /></a>
                     </div>
                     <div class="others">
@@ -489,9 +471,9 @@
                   </div>
                   <h4><a href="course-details.html">Physics</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Cedar School / Delsol School</b>
-                    </small>
+                    <small
+                      ><b>Affiliation: Cedar School / Delsol School</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -503,22 +485,17 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div
+              class="col-md-4 col-sm-6 equal-height item-grid edexcel ecat-mcat-iba"
+            >
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRABDULRAFAY(PHY).png"
-                          alt=""
+                          alt="Sir Abdul Rafay"
                       /></a>
                     </div>
                     <div class="others">
@@ -530,9 +507,7 @@
                   </div>
                   <h4><a href="course-details.html">Physics</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: ---</b>
-                    </small>
+                    <small><b>Affiliation: ---</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -544,22 +519,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid edexcel">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRSHAHARYARLALANI(COMP).png"
-                          alt=""
+                          alt="Sir Shaharyar Lalani"
                       /></a>
                     </div>
                     <div class="others">
@@ -571,9 +539,9 @@
                   </div>
                   <h4><a href="course-details.html">Computer</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Cedar School / Cedar College</b>
-                    </small>
+                    <small
+                      ><b>Affiliation: Cedar School / Cedar College</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -585,22 +553,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIR-MAROOF-RIZVI-(BIO).png"
-                          alt=""
+                          alt="Sir Maroof Rizvi"
                       /></a>
                     </div>
                     <div class="others">
@@ -612,9 +573,9 @@
                   </div>
                   <h4><a href="course-details.html">Biology</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Cedar School / Stanmore School</b>
-                    </small>
+                    <small
+                      ><b>Affiliation: Cedar School / Stanmore School</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -626,22 +587,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRWAQASAHMED(ENG).png"
-                          alt=""
+                          alt="Sir Waqas Ahmed"
                       /></a>
                     </div>
                     <div class="others">
@@ -653,9 +607,9 @@
                   </div>
                   <h4><a href="course-details.html">English</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: The Lab School / Intellect</b>
-                    </small>
+                    <small
+                      ><b>Affiliation: The Lab School / Intellect</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -667,22 +621,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIR-ALI-MEHDI-(URDU).png"
-                          alt=""
+                          alt="Sir Ali Mehdi"
                       /></a>
                     </div>
                     <div class="others">
@@ -694,9 +641,11 @@
                   </div>
                   <h4><a href="course-details.html">Urdu</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Cedar School / Metropolitan Academy</b>
-                    </small>
+                    <small
+                      ><b
+                        >Affiliation: Cedar School / Metropolitan Academy</b
+                      ></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -708,22 +657,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/Sir-Asif-Rehmani-(URDU).png"
-                          alt=""
+                          alt="Sir Asif Rehmani"
                       /></a>
                     </div>
                     <div class="others">
@@ -735,9 +677,7 @@
                   </div>
                   <h4><a href="course-details.html">Urdu</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: The Habibians School</b>
-                    </small>
+                    <small><b>Affiliation: The Habibians School</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -749,22 +689,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIR-ASAD-JILANI-(ISL).png"
-                          alt=""
+                          alt="Sir Asad Jilani"
                       /></a>
                     </div>
                     <div class="others">
@@ -776,9 +709,7 @@
                   </div>
                   <h4><a href="course-details.html">Islamiyat</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Beaconhouse</b>
-                    </small>
+                    <small><b>Affiliation: Beaconhouse</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -790,22 +721,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRBILALSUJELA(ISLAMIYAT).png"
-                          alt=""
+                          alt="Sir Bilal Sujela"
                       /></a>
                     </div>
                     <div class="others">
@@ -817,9 +741,7 @@
                   </div>
                   <h4><a href="course-details.html">Islamiyat</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Metropolitan Academy</b>
-                    </small>
+                    <small><b>Affiliation: Metropolitan Academy</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -831,22 +753,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/amir-hasni.png"
-                          alt=""
+                          alt="Sir Amir Hasani"
                       /></a>
                     </div>
                     <div class="others">
@@ -858,12 +773,7 @@
                   </div>
                   <h4><a href="course-details.html">Islamiyat</a></h4>
                   <div class="cats">
-                    <small>
-                      <b
-                        >Affiliation: IUSS / The Next School / Avicenna
-                        Academy</b
-                      >
-                    </small>
+                    <small><b>Affiliation: IUSS / The Next School...</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -875,22 +785,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid cambridge">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRTALHAASAD(PAK.STD).png"
-                          alt=""
+                          alt="Sir Talha Asad"
                       /></a>
                     </div>
                     <div class="others">
@@ -902,9 +805,7 @@
                   </div>
                   <h4><a href="course-details.html">Pakistan Studies</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Beaconhouse</b>
-                    </small>
+                    <small><b>Affiliation: Beaconhouse</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -916,22 +817,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIR-KHIZER-HAYAT-(PST).png"
-                          alt=""
+                          alt="Sir Khizar Hayat"
                       /></a>
                     </div>
                     <div class="others">
@@ -943,9 +837,9 @@
                   </div>
                   <h4><a href="course-details.html">Pakistan Studies</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: The Academy / The Next School</b>
-                    </small>
+                    <small
+                      ><b>Affiliation: The Academy / The Next School</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -957,22 +851,17 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div
+              class="col-md-4 col-sm-6 equal-height item-grid sat-gmat-gre ecat-mcat-iba"
+            >
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/hafizbilal.png"
-                          alt=""
+                          alt="Sir Hafiz Bilal"
                       /></a>
                     </div>
                     <div class="others">
@@ -984,12 +873,11 @@
                   </div>
                   <h4><a href="course-details.html">Accounting</a></h4>
                   <div class="cats">
-                    <small>
-                      <b
-                        >Affiliation: Habib Public School / Aitchison Model
-                        School</b
-                      >
-                    </small>
+                    <small
+                      ><b
+                        >Affiliation: Habib Public School / Aitchison...</b
+                      ></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -1001,22 +889,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRSYEDMAAZ(BS).png"
-                          alt=""
+                          alt="Sir Syed Maaz Ali"
                       /></a>
                     </div>
                     <div class="others">
@@ -1028,9 +909,7 @@
                   </div>
                   <h4><a href="course-details.html">Business Studies</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Beaconhouse</b>
-                    </small>
+                    <small><b>Affiliation: Beaconhouse</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -1042,22 +921,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/sirnaseemahmed.png"
-                          alt=""
+                          alt="Sir Naseem Ahmed"
                       /></a>
                     </div>
                     <div class="others">
@@ -1069,12 +941,11 @@
                   </div>
                   <h4><a href="course-details.html">Economics</a></h4>
                   <div class="cats">
-                    <small>
-                      <b
-                        >Affiliation: Whales College / The Academy / The City
-                        School</b
-                      >
-                    </small>
+                    <small
+                      ><b
+                        >Affiliation: Whales College / The Academy...</b
+                      ></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -1086,22 +957,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIR-BILAL-HASAN-(SOC-PSY).png"
-                          alt=""
+                          alt="Sir Bilal Hassan"
                       /></a>
                     </div>
                     <div class="others">
@@ -1113,9 +977,7 @@
                   </div>
                   <h4><a href="course-details.html">Sociology</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Eden College / HPGS</b>
-                    </small>
+                    <small><b>Affiliation: Eden College / HPGS</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -1127,22 +989,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIR-BILAL-HASAN-(SOC-PSY).png"
-                          alt=""
+                          alt="Sir Bilal Hassan"
                       /></a>
                     </div>
                     <div class="others">
@@ -1154,12 +1009,9 @@
                   </div>
                   <h4><a href="course-details.html">Psychology</a></h4>
                   <div class="cats">
-                    <small>
-                      <b
-                        >Affiliation: Root Millennium College / Beacon House /
-                        Credo School / Highbrow College / HPGS</b
-                      >
-                    </small>
+                    <small
+                      ><b>Affiliation: Root Millennium College...</b></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -1171,22 +1023,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div class="col-md-4 col-sm-6 equal-height item-grid">
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
                         ><img
                           src="assets/img/teacher-pics/SIRSHERYARJAVED(LAW).png"
-                          alt=""
+                          alt="Sir Sheryar Javed"
                       /></a>
                     </div>
                     <div class="others">
@@ -1198,12 +1043,11 @@
                   </div>
                   <h4><a href="course-details.html">Law</a></h4>
                   <div class="cats">
-                    <small>
-                      <b
-                        >Affiliation: Titan College / Root Future World School /
-                        Bahria College / KNS School of Business</b
-                      >
-                    </small>
+                    <small
+                      ><b
+                        >Affiliation: Titan College / Root Future World...</b
+                      ></small
+                    >
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -1215,20 +1059,17 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-md-4 col-sm-6 equal-height">
+            <div
+              class="col-md-4 col-sm-6 equal-height item-grid edexcel ecat-mcat-iba"
+            >
               <div class="item">
-                <div class="thumb">
-                  <a href="course-details.html">
-                    <img src="assets/img/courses/7.jpg" alt="" />
-                  </a>
-                </div>
                 <div class="info">
                   <div class="author-info">
                     <div class="thumb">
                       <a href="register.html"
-                        ><img src="assets/img/teacher-pics/yumna.png" alt=""
+                        ><img
+                          src="assets/img/teacher-pics/yumna.png"
+                          alt="Miss Yumna Shehreen"
                       /></a>
                     </div>
                     <div class="others">
@@ -1240,9 +1081,7 @@
                   </div>
                   <h4><a href="course-details.html">Marine Science</a></h4>
                   <div class="cats">
-                    <small>
-                      <b>Affiliation: Roots Millennium School</b>
-                    </small>
+                    <small><b>Affiliation: Roots Millennium School</b></small>
                   </div>
                   <p>
                     Enroll Today for A and O Levels Crash and Regular Groups
@@ -1254,7 +1093,6 @@
                 </div>
               </div>
             </div>
-            <!-- End Single Item -->
           </div>
         </div>
       </div>
@@ -1381,6 +1219,33 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Wait for images to load before initializing Isotope
+        var $grid = $(".popular-courses-items").imagesLoaded(function () {
+          // Init Isotope
+          $grid.isotope({
+            itemSelector: ".item-grid",
+            layoutMode: "fitRows",
+          });
+        });
+
+        // Bind filter button click
+        $(".popular-filter").on("click", "button", function () {
+          var filterValue = $(this).attr("data-filter");
+          $grid.isotope({ filter: filterValue });
+        });
+
+        // Change is-checked class on buttons
+        $(".popular-filter").each(function (i, buttonGroup) {
+          var $buttonGroup = $(buttonGroup);
+          $buttonGroup.on("click", "button", function () {
+            $buttonGroup.find(".is-checked").removeClass("is-checked");
+            $(this).addClass("is-checked");
+          });
+        });
+      });
+    </script>
   </body>
 
   <!-- Mirrored from validthemes.live/themeforest/examin/courses-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Nov 2022 07:26:51 GMT -->
