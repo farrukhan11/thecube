@@ -63,20 +63,14 @@
 <body class="body">
 
     <!-- Modal start -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <img class=" modal hidden mobilepopup" src="/assets/img/modal-pic.jpeg" width="600px" alt="user" />
-                <button class="btn-close cross">
-
-                </button>
-                <div class="overlay hidden">
-                </div>
-            </div>
+    <div class="homepage-modal" data-homepage-modal>
+        <div class="homepage-modal__overlay" data-homepage-modal-overlay></div>
+        <div class="homepage-modal__dialog" role="dialog" aria-modal="true" aria-label="Latest update">
+            <button type="button" class="homepage-modal__close" aria-label="Close modal">&times;</button>
+            <img class="homepage-modal__image" src="assets/img/modal-pic.jpeg"
+                alt="Latest offer from The Cube Institute" width="600">
         </div>
     </div>
-
     <!-- Modal End -->
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
@@ -988,7 +982,7 @@
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/d71e7d4329.js" crossorigin="anonymous"></script>
-    <!-- <script src="/modal.js"></script> -->
+    <script src="modal.js"></script>
      <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
 <script src="https://elfsightcdn.com/platform.js" async></script>
 </body>
