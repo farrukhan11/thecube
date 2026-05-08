@@ -7481,17 +7481,39 @@ footer .footer-bottom.bg-light p {
 .homepage-modal__dialog {
   position: relative;
   z-index: 2;
-  width: min(90vw, 640px);
+  width: auto;
+  max-width: 92vw;
+  max-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-  background: #ffffff;
+  background: transparent;
 }
 
 .homepage-modal__image {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 92vw;
+  max-height: 92vh;
   height: auto;
+  object-fit: contain;
+  object-position: center;
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.homepage-modal__image.is-sliding-out {
+  transform: translateX(-28px);
+  opacity: 0;
+}
+
+.homepage-modal__image.is-sliding-in {
+  transform: translateX(28px);
+  opacity: 0;
 }
 
 .homepage-modal__close {
