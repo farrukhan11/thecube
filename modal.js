@@ -8,9 +8,6 @@
   const closeButton = modal.querySelector(".homepage-modal__close");
   const modalImage = modal.querySelector(".homepage-modal__image");
 
-  if (modalImage) {
-    modalImage.src = "assets/img/modal-pic.jpg";
-  }
 
   const openModal = () => {
     modal.classList.add("is-visible");
